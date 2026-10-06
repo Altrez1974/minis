@@ -1,0 +1,21 @@
+:root{--bg:#120f0c;--card:#1c1712;--ink:#efe6d6;--dim:#a99c88;--gold:#d2a55a;--line:#3a3025;--accent:#8a5a2a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Georgia,"Times New Roman",serif}
+.wrap{max-width:720px;margin:0 auto;padding:16px}
+header.hero{text-align:center;padding:22px 0 10px}header.hero h1{margin:0;font-size:2rem;color:var(--gold);letter-spacing:.5px}
+header.hero .sub{color:var(--dim);font-size:.95rem;margin-top:4px}
+.photo{width:100%;border-radius:14px;border:1px solid var(--line);display:block;background:#000}
+.photos{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:14px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.05rem;color:var(--gold);text-transform:uppercase;letter-spacing:.12em}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;text-align:center}
+.stat{background:#0f0c09;border:1px solid var(--line);border-radius:10px;padding:8px 2px}.stat b{display:block;font-size:1.3rem}.stat small{color:var(--dim);letter-spacing:.1em}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-top:10px}
+.pill{background:#0f0c09;border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center}.pill b{display:block;font-size:1.15rem}.pill small{color:var(--dim)}
+ul{padding-left:18px;margin:6px 0}li{margin:3px 0}.quiet{color:var(--dim)}
+.att{border-left:3px solid var(--accent);padding:6px 10px;margin:8px 0;background:#0f0c09;border-radius:0 10px 10px 0}
+footer{text-align:center;color:var(--dim);font-size:.8rem;padding:24px 0}footer a{color:var(--gold);text-decoration:none}
+a.back{color:var(--gold);text-decoration:none;font-size:.9rem}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ink)}
+.tile img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:#000}.tile .t{padding:10px 12px}.tile .t b{color:var(--gold)}
+@media (max-width:480px){.stats{grid-template-columns:repeat(3,1fr)}}
